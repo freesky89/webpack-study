@@ -1,0 +1,35 @@
+{
+  "name": "getting-started-using-a-configuration",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "less-loader": "^11.1.0",
+    "lodash": "^4.17.21",
+    "px2rem-webpack-plugin": "^0.2.3",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "scss-loader": "0.0.1",
+    "style-loader": "^3.3.2",
+    "vue": "^2.7.14",
+    "vue-loader": "^15.10.1",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "devDependencies": {
+    "serve": "^12.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
