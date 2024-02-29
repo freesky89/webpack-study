@@ -1,12 +1,20 @@
 <template>
-    <div class="test">{{ a }}</div>
+    <div class="test">{{ a }}
+        
+        <img :src="bbb" />
+        {{ bbb }}
+    </div>
 </template>
 <script>
 export default {
     data() {
         return {
             a: 1,
+            // VERSION: VERSION,
         }
+    },
+    mounted() {
+        console.log('VERSION-from-vue', VERSION)
     }
 }
 </script>

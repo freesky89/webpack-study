@@ -1,10 +1,11 @@
 {
-  "name": "getting-started-using-a-configuration",
+  "name": "webpack-study-project",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build:sit": "cross-env NODE_ENV=sit node build/index.js",
+    "build:syx": "cross-env NODE_ENV=syx webpack",
+    "build:mccy": "cross-env NODE_ENV=mccy webpack",
     "start": "serve dist"
   },
   "keywords": [],
@@ -14,22 +15,31 @@
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "babel-loader": "^9.1.2",
+    "chalk": "^4.1.2",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
+    "less": "^4.1.3",
     "less-loader": "^11.1.0",
     "lodash": "^4.17.21",
+    "ora": "^4.1.1",
     "px2rem-webpack-plugin": "^0.2.3",
-    "sass": "^1.62.0",
-    "sass-loader": "^13.2.2",
-    "scss-loader": "0.0.1",
+    "rimraf": "^4.4.1",
     "style-loader": "^3.3.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.7.14",
     "vue-loader": "^15.10.1",
     "vue-style-loader": "^4.1.3",
-    "vue-template-compiler": "^2.7.14"
+    "vue-template-compiler": "^2.7.14",
+    "webpack-merge": "^4.2.2"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
     "serve": "^12.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
