@@ -1,6 +1,5 @@
 <template>
     <div class="test">{{ a }}
-        
         <img :src="bbb" />
         {{ bbb }}
     </div>
