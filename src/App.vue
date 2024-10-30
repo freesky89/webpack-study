@@ -2,6 +2,7 @@
     <div class="test">{{ a }}
         <img :src="bbb" />
         {{ bbb }}
+        <div>456</div>
     </div>
 </template>
 <script>
